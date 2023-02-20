@@ -1,0 +1,85 @@
+@import '../../components/GlobalStyles/GlobalStyle.module.scss';
+
+
+.bg-dark-custom{
+    background-color: $color-main;
+}
+
+/*** Navbar ***/
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.logo-txt{
+    line-height: 1.2;
+    color: $color-main;
+}
+
+.btn-green-custom{
+    background-color: #348E38;
+    border-color: #348E38;
+    height: 80px;
+}
+
+
+.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.height-80 {
+    height: 80px;
+}
+
+.nav-link {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
