@@ -1,0 +1,40 @@
+@import '../../components/GlobalStyles/GlobalStyle.module.scss';
+
+.btn-hn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.btn-hn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.btn-hn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    color: var(--light);
+    background: #072a19;
+}
+  
+.copyright a {
+    color: #ffffff;
+}
+  
+.copyright a:hover {
+    color: var(--primary);
+}
+  

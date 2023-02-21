@@ -1,8 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './routes/routes';
 // import { publicRoutes, privateRoutes } from '~/routes';
+import WOW from 'wowjs';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
     <Router>
       <div className="App">

@@ -14,31 +14,36 @@
     position: absolute;
 }
 
-// .carousel-control-prev,
-// .carousel-control-next {
-//     width: 15%;
-// }
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
 
-// .carousel-control-prev-icon,
-// .carousel-control-next-icon {
-//     width: 3rem;
-//     height: 3rem;
-//     border-radius: 3rem;
-//     background-color: var(--primary);
-//     border: 10px solid var(--primary);
-// }
+.custom-pre-icon {
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 10px solid var(--primary);
+    z-index: 100;
+}
+
+.title-slide{
+    font-weight: 700;
+    line-height: 1.2;
+}
 
 
-// @media (max-width: 768px) {
-//    .carousel-item {
-//         position: relative;
-//         min-height: 450px;
-//     }
+@media (max-width: 768px) {
+   .custom-item-carou {
+        position: relative;
+        min-height: 450px;
+    }
     
-//    .carousel-item img {
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//     }
-// }
+   .custom-item-carou img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
