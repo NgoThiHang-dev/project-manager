@@ -10,6 +10,10 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 $color-main: #0F4229;
 $color-green: #348E38;

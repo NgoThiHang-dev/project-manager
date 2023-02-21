@@ -51,7 +51,7 @@ const Contact = () => {
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s" >
                             <div className="position-relative rounded overflow-hidden h-100">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30674.411354385036!2d108.22019743191633!3d16.049840995543867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b6f66cbec5%3A0xbc0f57b1afe192de!2zSOG6o2kgQ2jDonUgRGlzdHJpY3QsIERhIE5hbmcsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1676972032151!5m2!1sen!2s"
-                                    style={{ border: "0", minHeight: "450px" }} className={cx('position-relative w-100 h-100')} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    style={{ border: 0, minHeight: "450px" }} className={cx('position-relative w-100 h-100')} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>

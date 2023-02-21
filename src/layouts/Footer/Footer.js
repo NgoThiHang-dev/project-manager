@@ -18,7 +18,7 @@ const Footer = () => {
                             <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                             <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                             <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
-                            <div class="d-flex pt-2">
+                            <div className="d-flex pt-2">
                                 <Link to="" className={cx('btn-square', 'btn', 'btn-outline-light', 'rounded-circle', 'me-2')}>
                                     <i className="fab fa-facebook-f"></i>
                                 </Link>
