@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 const Contact = () => {
     return (
-        <div className={cx('contact-content')}>
+        <div id="contact" className={cx('contact-content')}>
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="row g-5">

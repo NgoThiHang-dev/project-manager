@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Service.module.scss';
-import { MdClose } from "react-icons/md";
+import { MdClose } from 'react-icons/md';
 
 import imgService1 from '../../../../assets/img/service-1.jpg';
 import imgService2 from '../../../../assets/img/service-2.jpg';
@@ -18,44 +18,60 @@ import iconService5 from '../../../../assets/img/icon/icon-6.png';
 import iconService6 from '../../../../assets/img/icon/icon-8.png';
 
 import CountUp from 'react-countup';
-import { Parallax, Background } from "react-parallax";
+import { Parallax, Background } from 'react-parallax';
 
 const cx = classNames.bind(styles);
 
 const dataService = [
     {
-        id: 1, title: 'Landscaping', image: imgService1, icon: iconService1,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.'
+        id: 1,
+        title: 'Landscaping',
+        image: imgService1,
+        icon: iconService1,
+        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
     {
-        id: 2, title: 'Landscaping', image: imgService2, icon: iconService2,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.'
+        id: 2,
+        title: 'Landscaping',
+        image: imgService2,
+        icon: iconService2,
+        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
     {
-        id: 3, title: 'Landscaping', image: imgService3, icon: iconService3,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.'
+        id: 3,
+        title: 'Landscaping',
+        image: imgService3,
+        icon: iconService3,
+        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
     {
-        id: 4, title: 'Landscaping', image: imgService4, icon: iconService4,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.'
+        id: 4,
+        title: 'Landscaping',
+        image: imgService4,
+        icon: iconService4,
+        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
     {
-        id: 5, title: 'Landscaping', image: imgService5, icon: iconService5,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.'
+        id: 5,
+        title: 'Landscaping',
+        image: imgService5,
+        icon: iconService5,
+        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
     {
-        id: 6, title: 'Landscaping', image: imgService6, icon: iconService6,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.'
+        id: 6,
+        title: 'Landscaping',
+        image: imgService6,
+        icon: iconService6,
+        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
-]
+];
 
 const Service = () => {
     const [listService, setListService] = useState(dataService);
 
-
-
     return (
-        <div className={cx('service-content')}>
+        <div id="services" className={cx('service-content')}>
             <div className={cx('container-xxl', 'py-5')}>
                 <div className={cx('container')}>
                     <div className={cx('text-center mx-auto wow fadeInUp')} data-wow-delay="0.1s">
@@ -75,7 +91,10 @@ const Service = () => {
                                                 <img className={cx('img-fluid')} src={lstService.icon} alt="Icon" />
                                             </div>
                                             <h4 className="mb-3">Landscaping</h4>
-                                            <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                                            <p className="mb-4">
+                                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                                                stet diam sed stet.
+                                            </p>
                                             <Link to="" className={cx('btn', 'btn-read-more', 'text-decoration-none')}>
                                                 <i className={cx('fa fa-plus me-2 ', 'btn-sm')}></i>
                                                 Read More
@@ -83,13 +102,13 @@ const Service = () => {
                                         </div>
                                     </div>
                                 </div>
-                            )
+                            );
                         })}
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Service
+export default Service;

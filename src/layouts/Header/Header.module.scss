@@ -18,14 +18,9 @@
     height: 80px;
 }
 
-
-.sticky-top {
-    top: -100px;
-    transition: .5s;
-}
-
-.style-top{
-    top: -100px !important;
+.nav-transition{
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 }
 
 .height-80 {
@@ -53,6 +48,11 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+}
+
+.btn-nav-none{
+    border: none;
+    background: none;
 }
 
 @media (max-width: 991.98px) {

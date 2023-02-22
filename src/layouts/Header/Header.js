@@ -6,13 +6,35 @@ import routesConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
+const listMenu = [
+    {
+        name: 'About',
+        hasPath: '#about',
+    },
+    {
+        name: 'Services',
+        hasPath: '#services',
+    },
+    {
+        name: 'Projects',
+        hasPath: '#projects',
+    },
+    {
+        name: 'Recruitment',
+        hasPath: '#Recruitment',
+    },
+    {
+        name: 'Contact',
+        hasPath: '#contact',
+    },
+];
+
 const Header = () => {
     const [addClassShow, setAddClassShow] = useState(false);
+    const [active, setActive] = useState(null);
 
     const handleScroll = () => {
         const position = window.pageYOffset;
-        console.log('position');
-        console.log(position);
         if (position > 300) {
             setAddClassShow(true);
         }
@@ -20,9 +42,6 @@ const Header = () => {
             setAddClassShow(false);
         }
     };
-
-    console.log('addClassShow');
-    console.log(addClassShow);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -66,9 +85,14 @@ const Header = () => {
                 </div>
             </div>
             <nav
-                className={cx('navbar-header', 'navbar navbar-expand-lg bg-white navbar-light sticky-top p-0', {
-                    'shadow-sm': addClassShow ? true : false,
-                })}
+                className={cx(
+                    'navbar-header',
+                    'navbar navbar-expand-lg bg-white navbar-light sticky-top p-0',
+                    'nav-transition',
+                    {
+                        'shadow-sm': addClassShow ? true : false,
+                    },
+                )}
                 style={addClassShow ? { top: '0px' } : { top: '-100px' }}
             >
                 <Link
@@ -95,38 +119,24 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto p-4 p-lg-0">
-                        <Link
-                            to={routesConfig.home}
-                            className={cx('nav-item', 'nav-link', 'active', 'text-decoration-none')}
-                        >
-                            Home
-                        </Link>
-                        <Link to="#about" className={cx('nav-item', 'nav-link', 'text-decoration-none')}>
-                            About
-                        </Link>
-                        <Link to={routesConfig.home} className={cx('nav-item', 'nav-link', 'text-decoration-none')}>
-                            Services
-                        </Link>
-                        <Link to={routesConfig.home} className={cx('nav-item', 'nav-link', 'text-decoration-none')}>
-                            Projects
-                        </Link>
-
-                        {/* <div className={cx('nav-item', 'dropdown')}>
-                                <Link to={routesConfig.home} className={cx('nav-link', 'dropdown-toggle')} data-bs-toggle="dropdown">Pages</Link>
-                                <div className={cx('dropdown-menu', 'bg-light', 'm-0')}>
-                                    <Link to={routesConfig.home} className={cx('dropdown-item')}>Features</Link>
-                                    <Link to={routesConfig.home} className={cx('dropdown-item')}>Free Quote</Link>
-                                    <Link to={routesConfig.home} className={cx('dropdown-item')}>Our Team</Link>
-                                    <Link to={routesConfig.home} className={cx('dropdown-item')}>Testimonial</Link>
-                                    <Link to={routesConfig.home} className={cx('dropdown-item')}>404.html</Link>
-                                </div>
-                            </div> */}
-                        <Link to={routesConfig.home} className={cx('nav-item', 'nav-link', 'text-decoration-none')}>
-                            Contact
-                        </Link>
+                        {listMenu.map((item, index) => (
+                            <a
+                                href={item.hasPath}
+                                className={cx(
+                                    'nav-item',
+                                    'nav-link',
+                                    'text-decoration-none',
+                                    active === item.name ? 'active' : '',
+                                )}
+                                onClick={() => setActive(item.name)}
+                                key={index}
+                            >
+                                {item.name}
+                            </a>
+                        ))}
                     </div>
-                    <Link
-                        to={routesConfig.home}
+                    <a
+                        href={routesConfig.home}
                         className={cx(
                             'btn',
                             'btn-green-custom',
@@ -140,7 +150,7 @@ const Header = () => {
                         )}
                     >
                         Get A Quote<i className="fa fa-arrow-right ms-3"></i>
-                    </Link>
+                    </a>
                 </div>
             </nav>
         </>

@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 
 const About = () => {
     return (
-        <div className={cx('about')} id="about">
+        <div id="about" className={cx('about')}>
             <div className={cx('container-xxl', 'py-5')}>
                 <div className={cx('container')}>
                     <div className={cx('row', 'g-5', 'align-items-end')}>
