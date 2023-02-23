@@ -20,7 +20,7 @@ const Slide = () => {
                             <div className="container">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-8">
-                                        <h1 className={cx('title-slide', 'display-1 text-white mb-5 animated slideInDown')}>Make Your Home Like Garden</h1>
+                                        <h1 className={cx('title-slide', 'display-1 text-white mb-5 animated slideInDown')}>We <br /> make smiles</h1>
                                         <Link to="" className={cx('btn', 'btn-ex-more', 'py-sm-3 px-sm-4')}>Explore More</Link>
                                     </div>
                                 </div>
@@ -33,7 +33,7 @@ const Slide = () => {
                             <div className="container">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-7">
-                                        <h1 className={cx('title-slide', 'display-1 text-white mb-5 animated slideInDown')}>Create Your Own Small Garden At Home</h1>
+                                        <h1 className={cx('title-slide', 'display-1 text-white mb-5 animated slideInDown')}>The Relentless Pursuit of Perfection</h1>
                                         <Link to="" className={cx('btn', 'btn-ex-more', 'py-sm-3 px-sm-4')}>Explore More</Link>
                                     </div>
                                 </div>

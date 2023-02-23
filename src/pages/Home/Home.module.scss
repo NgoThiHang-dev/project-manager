@@ -1,0 +1,9 @@
+@import '../../components/GlobalStyles/GlobalStyle.module.scss';
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}

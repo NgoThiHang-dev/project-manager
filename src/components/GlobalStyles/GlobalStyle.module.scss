@@ -44,7 +44,12 @@ $bg-icon: #e8f5e9;
     height: 38px;
 }
 
-.btn-square{
+.btn-lg-square{
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square, .btn-lg-square{
     padding: 0;
     display: flex;
     align-items: center;
@@ -53,7 +58,15 @@ $bg-icon: #e8f5e9;
 }
 
 .bg-dark {
-    background-color: #0F4229 !important;
+    background-color: $color-main !important;
+}
+
+.bg-green {
+    background-color: $color-green !important;
+}
+
+.border-green{
+    border-color: $color-green!important;
 }
 
 

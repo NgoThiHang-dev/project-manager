@@ -1,1 +1,15 @@
 @import '../../../../components/GlobalStyles/GlobalStyle.module.scss';
+
+.cover-background{
+    background: rgba(15, 66, 41, 0.6);
+}
+
+
+.contact-content-bg{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px;
+    border-radius: 6px;
+}

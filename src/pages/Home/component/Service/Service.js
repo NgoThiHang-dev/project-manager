@@ -4,63 +4,61 @@ import { Link } from 'react-router-dom';
 import styles from './Service.module.scss';
 import { MdClose } from 'react-icons/md';
 
-import imgService1 from '../../../../assets/img/service-1.jpg';
-import imgService2 from '../../../../assets/img/service-2.jpg';
-import imgService3 from '../../../../assets/img/service-3.jpg';
-import imgService4 from '../../../../assets/img/service-4.jpg';
-import imgService5 from '../../../../assets/img/service-5.jpg';
-import imgService6 from '../../../../assets/img/service-6.jpg';
-import iconService1 from '../../../../assets/img/icon/icon-2.png';
-import iconService2 from '../../../../assets/img/icon/icon-3.png';
-import iconService3 from '../../../../assets/img/icon/icon-4.png';
-import iconService4 from '../../../../assets/img/icon/icon-5.png';
-import iconService5 from '../../../../assets/img/icon/icon-6.png';
-import iconService6 from '../../../../assets/img/icon/icon-8.png';
+import imgService1 from '../../../../assets/img/services/service-1.jpg';
+import imgService2 from '../../../../assets/img/services/service-2.jpg';
+import imgService3 from '../../../../assets/img/services/service-3.jpg';
+import imgService4 from '../../../../assets/img/services/service-4.jpg';
+import imgService5 from '../../../../assets/img/services/service-5.jpg';
+import imgService6 from '../../../../assets/img/services/service-6.jpg';
 
-import CountUp from 'react-countup';
-import { Parallax, Background } from 'react-parallax';
+import iconService1 from '../../../../assets/img/icon/icons-1.png';
+import iconService2 from '../../../../assets/img/icon/icons-2.png';
+import iconService3 from '../../../../assets/img/icon/icons-3.png';
+import iconService4 from '../../../../assets/img/icon/icons-4.png';
+import iconService5 from '../../../../assets/img/icon/icons-5.png';
+import iconService6 from '../../../../assets/img/icon/icons-6.png';
 
 const cx = classNames.bind(styles);
 
 const dataService = [
     {
         id: 1,
-        title: 'Landscaping',
+        title: 'Web System',
         image: imgService1,
         icon: iconService1,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
+        description: 'We are not only the expert in development but also providing the architect design, infra design and solution consulting.',
     },
     {
         id: 2,
-        title: 'Landscaping',
+        title: 'Mobile Phone',
         image: imgService2,
         icon: iconService2,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
+        description: 'We are not only the expert in development but also providing the architect design, infra design and solution consulting.',
     },
     {
         id: 3,
-        title: 'Landscaping',
+        title: 'AI and Big Data',
         image: imgService3,
         icon: iconService3,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
+        description: 'Our AI solutions are applying on many products which are using image detection, natural language processing, smart crawling and recommendation system.',
     },
     {
         id: 4,
-        title: 'Landscaping',
+        title: 'IoT',
         image: imgService4,
         icon: iconService4,
-        description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
+        description: 'The IoT is a tool to capture information from a vast network of touchpoints, aggregate them in a shared system, and use them to improve your business.',
     },
     {
         id: 5,
-        title: 'Landscaping',
+        title: 'AR/VR',
         image: imgService5,
         icon: iconService5,
         description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
     },
     {
         id: 6,
-        title: 'Landscaping',
+        title: 'System Development',
         image: imgService6,
         icon: iconService6,
         description: 'Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.',
@@ -90,11 +88,12 @@ const Service = () => {
                                             <div className={cx('btn-square', 'rounded-circle', 'mx-auto', 'mb-3')}>
                                                 <img className={cx('img-fluid')} src={lstService.icon} alt="Icon" />
                                             </div>
-                                            <h4 className="mb-3">Landscaping</h4>
-                                            <p className="mb-4">
-                                                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                                stet diam sed stet.
-                                            </p>
+                                            <h4 className="mb-3">{lstService.title}</h4>
+                                            <div className={cx('service-description')}>
+                                                <p className="mb-4">
+                                                    {lstService.description}
+                                                </p>
+                                            </div>
                                             <Link to="" className={cx('btn', 'btn-read-more', 'text-decoration-none')}>
                                                 <i className={cx('fa fa-plus me-2 ', 'btn-sm')}></i>
                                                 Read More

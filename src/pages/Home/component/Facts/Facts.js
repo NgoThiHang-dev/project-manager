@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Facts.module.scss';
 import imgSlide1 from '../../../../assets/img/carousel-1.jpg';
 import CountUp from 'react-countup';
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 const cx = classNames.bind(styles);
 

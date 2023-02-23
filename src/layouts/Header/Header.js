@@ -19,13 +19,17 @@ const listMenu = [
         name: 'Projects',
         hasPath: '#projects',
     },
-    {
-        name: 'Recruitment',
-        hasPath: '#Recruitment',
-    },
+    // {
+    //     name: 'Recruitment',
+    //     hasPath: '#Recruitment',
+    // },
     {
         name: 'Contact',
         hasPath: '#contact',
+    },
+    {
+        name: 'Partner',
+        hasPath: '#partner',
     },
 ];
 
@@ -149,7 +153,7 @@ const Header = () => {
                             'text-white',
                         )}
                     >
-                        Get A Quote<i className="fa fa-arrow-right ms-3"></i>
+                        Recruitment
                     </a>
                 </div>
             </nav>

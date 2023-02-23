@@ -1,0 +1,13 @@
+@import '../../../../components/GlobalStyles/GlobalStyle.module.scss';
+
+img.partner-image {
+    width: 300px;
+    height: 140px;
+    padding: 1rem;
+    box-shadow: 0 0 45px rgb(0 0 0 / 8%);
+
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
