@@ -19,8 +19,8 @@ const Project = () => {
 
 
     return (
-        <div id="projects" className={cx('project-content')}>
-            <div className={cx('container-xxl', 'py-5')}>
+        <div id="projects" className={cx('project-content', 'py-5')}>
+            <div className={cx('container-xxl')}>
                 <div className={cx('container')}>
                     <div className={cx('text-center mx-auto wow fadeInUp')} data-wow-delay="0.1s">
                         <p className={cx('text-color-green', 'fs-5 fw-bold')}>Our Project</p>

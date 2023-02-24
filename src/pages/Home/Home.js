@@ -3,13 +3,13 @@ import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import Slide from './component/Slide/Slide';
 import WOW from 'wowjs';
-import Header from '~/layouts/Header';
+import Header from '~/layouts/components/Header';
 import Feature from './component/Feature/Feature';
 import About from './component/About/About';
 import Facts from './component/Facts/Facts';
 import Service from './component/Service/Service';
 import Contact from './component/Contact/Contact';
-import Footer from '~/layouts/Footer';
+import Footer from '~/layouts/components/Footer';
 import Project from './component/Project/Project';
 import Partner from './component/Partner/Partner';
 

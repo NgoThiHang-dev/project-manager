@@ -14,9 +14,9 @@ const cx = classNames.bind(styles);
 
 const Partner = () => {
     return (
-        <div id="partner" className={cx('partner')}>
+        <div id="partner" className={cx('partner', 'py-5')}>
             <div className={cx('container-fluid', 'd-flex', 'flex-wrap', 'justify-content-center', 'py-5 pt-lg-0')}>
-                <div className={cx('container', 'py-5')}>
+                <div className={cx('container')}>
                     <div className={cx('text-center mx-auto wow fadeInUp')} data-wow-delay="0.1s">
                         <p className={cx('text-color-green', 'fs-5 fw-bold')}>Our partner</p>
                         <h1 className={cx('text-color-main', 'display-5 mb-5')}>Services That We Offer For You</h1>

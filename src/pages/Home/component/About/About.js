@@ -9,8 +9,8 @@ const cx = classNames.bind(styles);
 
 const About = () => {
     return (
-        <div id="about" className={cx('about')}>
-            <div className={cx('container-xxl', 'py-5')}>
+        <div id="about" className={cx('about', 'py-5')}>
+            <div className={cx('container-xxl')}>
                 <div className={cx('container')}>
                     <div className={cx('row', 'g-5', 'align-items-end')}>
                         <div className={cx('col-lg-3 col-md-5', 'wow fadeInUp')} data-wow-delay="0.1s">

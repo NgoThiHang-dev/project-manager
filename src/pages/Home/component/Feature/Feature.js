@@ -10,9 +10,9 @@ const cx = classNames.bind(styles);
 
 const Feature = () => {
     return (
-        <div className={cx('feature')}>
+        <div className={cx('feature', 'py-5 pt-lg-0')}>
             <div className={cx('container-fluid', 'top-feature', 'py-5 pt-lg-0')}>
-                <div className={cx('container', 'py-5 pt-lg-0')}>
+                <div className={cx('container')}>
                     <div className={cx('row', 'gx-0')}>
                         <div className={cx('col-lg-4', 'wow fadeIn')} data-wow-delay="0.1s">
                             <div className={cx('feature-card')}>

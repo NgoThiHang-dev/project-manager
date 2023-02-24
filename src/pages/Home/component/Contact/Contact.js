@@ -10,8 +10,8 @@ const cx = classNames.bind(styles);
 const Contact = () => {
     return (
         <Parallax bgImage={imgSlide1} strength={500}>
-            <div id="contact" className={cx('contact-content', 'cover-background')}>
-                <div className="container-xxl py-5">
+            <div id="contact" className={cx('contact-content', 'cover-background', 'py-5')}>
+                <div className="container-xxl">
                     <div className={cx('container', 'contact-content-bg')}>
                         <div className="row g-5">
                             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
