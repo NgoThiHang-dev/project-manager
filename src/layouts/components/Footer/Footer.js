@@ -10,7 +10,7 @@ const cx = classNames.bind(styles);
 const Footer = () => {
     return (
         <div className={cx('footer')}>
-            <div className={cx('container-fluid', 'bg-dark', 'text-light footer mt-5 py-4 wow fadeIn')} data-wow-delay="0.1s">
+            <div className={cx('container-fluid', 'bg-dark', 'text-light footer py-4 wow fadeIn')} data-wow-delay="0.1s">
                 <div className="container py-5">
                     <div className="row g-5">
                         <div className="col-lg-4 col-md-4">

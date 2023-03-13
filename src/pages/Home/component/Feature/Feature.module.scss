@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    color: $color-green;
 }
 
 .bg-icon {
@@ -28,6 +29,10 @@
 
 .rounded-circle{
     border-radius: 50%;
+}
+
+.feature-title{
+    color: $color-main;
 }
 
 @media (min-width: 991.98px) {

@@ -1,9 +1,7 @@
 import React from 'react'
 import classNames from 'classnames/bind';
-import { Link } from 'react-router-dom';
 import styles from './Feature.module.scss';
-import { MdClose } from "react-icons/md";
-
+import { MdClose, MdGroups, MdPermPhoneMsg } from "react-icons/md";
 
 
 const cx = classNames.bind(styles);
@@ -20,7 +18,7 @@ const Feature = () => {
                                     <MdClose />
                                 </div>
                                 <div className={cx('ps-3')}>
-                                    <h4>No Hidden Cost</h4>
+                                    <h4 className={cx('feature-title')}>No Hidden Cost</h4>
                                     <span>There are no hidden costs. No extra fee!</span>
                                 </div>
                             </div>
@@ -28,10 +26,10 @@ const Feature = () => {
                         <div className={cx('col-lg-4', 'wow fadeIn')} data-wow-delay="0.3s">
                             <div className={cx('feature-card')}>
                                 <div className={cx('icon-feature', 'bg-icon', 'flex-shrink-0', 'rounded-circle')}>
-                                    <MdClose />
+                                    <MdGroups />
                                 </div>
                                 <div className={cx('ps-3')}>
-                                    <h4>No Hidden Cost</h4>
+                                    <h4 className={cx('feature-title')}>Dedicated Team</h4>
                                     <span>There are no hidden costs. No extra fee!</span>
                                 </div>
                             </div>
@@ -39,10 +37,10 @@ const Feature = () => {
                         <div className={cx('col-lg-4', 'wow fadeIn')} data-wow-delay="0.5s">
                             <div className={cx('feature-card')}>
                                 <div className={cx('icon-feature', 'bg-icon', 'flex-shrink-0', 'rounded-circle')}>
-                                    <MdClose />
+                                    <MdPermPhoneMsg />
                                 </div>
                                 <div className={cx('ps-3')}>
-                                    <h4>No Hidden Cost</h4>
+                                    <h4 className={cx('feature-title')}>24/7 Available</h4>
                                     <span>There are no hidden costs. No extra fee!</span>
                                 </div>
                             </div>

@@ -2,13 +2,11 @@ import React from 'react'
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Partner.module.scss';
-import { MdClose } from "react-icons/md";
 
 import imgPartner1 from '../../../../assets/img/partner/glotechSvg2.svg';
 import imgPartner2 from '../../../../assets/img/partner/dalatdlu.png';
 import imgPartner3 from '../../../../assets/img/partner/react.png';
 import imgPartner4 from '../../../../assets/img/partner/bootstrap.png';
-import imgPartner5 from '../../../../assets/img/partner/cisco.jpg';
 
 const cx = classNames.bind(styles);
 
@@ -24,12 +22,12 @@ const Partner = () => {
                     <div className={cx('row', 'justify-content-center')}>
                         <div className={cx('col-md-3 col-6', 'partner-item', 'mb-4')}>
                             <Link to="">
-                                <img src={imgPartner1} alt="" className={cx('partner-image')} />
+                                <img src={imgPartner2} alt="" className={cx('partner-image')} />
                             </Link>
                         </div>
                         <div className={cx('col-md-3 col-6', 'partner-item', 'mb-4')}>
                             <Link to="">
-                                <img src={imgPartner2} alt="" className={cx('partner-image')} />
+                                <img src={imgPartner1} alt="" className={cx('partner-image')} />
                             </Link>
                         </div>
                         <div className={cx('col-md-3 col-6', 'partner-item', 'mb-4')}>
@@ -42,16 +40,7 @@ const Partner = () => {
                                 <img src={imgPartner4} alt="" className={cx('partner-image')} />
                             </Link>
                         </div>
-                        <div className={cx('col-md-3 col-6', 'partner-item', 'mb-4')}>
-                            <Link to="">
-                                <img src={imgPartner5} alt="" className={cx('partner-image')} />
-                            </Link>
-                        </div>
-                        <div className={cx('col-md-3 col-6', 'partner-item', 'mb-4')}>
-                            <Link to="">
-                                <img src={imgPartner3} alt="" className={cx('partner-image')} />
-                            </Link>
-                        </div>
+
                     </div>
 
                 </div>

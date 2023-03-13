@@ -1,0 +1,78 @@
+@import '../../../../../components/GlobalStyles/GlobalStyle.module.scss';
+
+.search{
+    box-shadow: 0 0 45px rgb(0 0 0 / 8%);
+    padding: 10px;
+
+    .icon-search{
+        width: 20px;
+        height: 20px;
+    }
+
+    .bg-none{
+        background: none !important;
+    }
+}
+
+.menu-user__item{
+    .custom-btn-dropdown{
+        border: none !important;
+        padding: 0px;
+        background: none;
+
+        &::after{
+            display: none;
+        }
+    }
+    
+    img.avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .dropdown-profile{
+        .my-profile {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+
+            a {
+                color: $color-gray;
+                background: none;
+                &:hover{
+                    color: $color-green;
+                }
+            }
+
+            .btn-logout {
+                border: none;
+                background: none;
+                margin-left: 10px;
+                color: $color-gray;
+                &:hover{
+                    color: $color-green;
+                }
+            }
+        }
+
+        .dropdown-divider{
+            width: 96%;
+            margin: 0px auto;
+        }
+        
+        
+        .info-profile {
+            margin-left: 10px;
+
+            .info-profile-username{
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .info-profile-email{
+                color: $color-gray;
+            }
+        }
+    }
+}

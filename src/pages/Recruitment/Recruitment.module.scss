@@ -1,0 +1,25 @@
+@import '../../components/GlobalStyles/GlobalStyle.module.scss';
+
+.recruitment-item{
+    box-shadow: 0 0 45px rgb(0 0 0 / 8%);
+    padding: 30px 20px;
+
+    .recruitment-name{
+        color: $color-main;
+    }
+
+    .recruitment-description{
+        color: $color-gray;
+    }
+
+    .recruitment-date{
+        color: $color-green;
+    }
+
+    &:hover{
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        cursor: pointer;
+    }
+}
+
+

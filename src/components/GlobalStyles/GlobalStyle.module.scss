@@ -22,6 +22,10 @@ $color-gray: #525368;
 $bg-icon: #e8f5e9;
 $color-text-ad: #697a8d;
 
+.box-showdown{
+    box-shadow: 0 0 45px rgb(0 0 0 / 8%);
+}
+
 .btn-ex-more{
     background-color: var(--primary);
     border-color: var(--primary);
@@ -124,4 +128,6 @@ $color-text-ad: #697a8d;
 
 //end wowjs
 
-
+.row-mp-0{
+    margin: 0px !important;
+}

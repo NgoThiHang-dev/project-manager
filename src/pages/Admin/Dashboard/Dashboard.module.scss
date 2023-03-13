@@ -1,1 +1,23 @@
-@import '../../../../components/GlobalStyles/GlobalStyle.module.scss';
+@import '../../../components/GlobalStyles/GlobalStyle.module.scss';
+
+// start banner dashboard
+.banner-dash{
+    box-shadow: 0 0 45px rgb(0 0 0 / 8%);
+    padding: 20px;
+
+    .card-banner{
+        padding-top: 40px;
+    }
+
+    .img-banner{
+        width: 160px;
+    }
+}
+// end banner dashboard
+
+.statistic{
+    .icon-statis{
+        width: 40px;
+        height: 40px;
+    }
+}

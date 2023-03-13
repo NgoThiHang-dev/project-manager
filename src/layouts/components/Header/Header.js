@@ -9,15 +9,15 @@ const cx = classNames.bind(styles);
 const listMenu = [
     {
         name: 'About',
-        hasPath: '#about',
+        hasPath: '/#about',
     },
     {
         name: 'Services',
-        hasPath: '#services',
+        hasPath: '/#services',
     },
     {
         name: 'Projects',
-        hasPath: '#projects',
+        hasPath: '/#projects',
     },
     // {
     //     name: 'Recruitment',
@@ -25,11 +25,11 @@ const listMenu = [
     // },
     {
         name: 'Contact',
-        hasPath: '#contact',
+        hasPath: '/#contact',
     },
     {
         name: 'Partner',
-        hasPath: '#partner',
+        hasPath: '/#partner',
     },
 ];
 
@@ -57,7 +57,7 @@ const Header = () => {
 
     return (
         <>
-            <div className={cx('topbar-header', 'container-fluid', 'bg-dark-custom', 'text-light px-0 py-2')}>
+            <div id='header' className={cx('topbar-header', 'container-fluid', 'bg-dark-custom', 'text-light px-0 py-2')}>
                 <div className="row gx-0 d-none d-lg-flex">
                     <div className="col-lg-7 px-5 text-start">
                         <div className="h-100 d-inline-flex align-items-center me-4">
@@ -99,8 +99,8 @@ const Header = () => {
                 )}
                 style={addClassShow ? { top: '0px' } : { top: '-100px' }}
             >
-                <Link
-                    to={routesConfig.home}
+                <a
+                    href='/'
                     className={cx(
                         'navbar-brand',
                         'd-flex',
@@ -111,8 +111,8 @@ const Header = () => {
                         'height-80',
                     )}
                 >
-                    <h1 className={cx('logo-txt', 'm-0')}>Gardener</h1>
-                </Link>
+                    <h1 className={cx('logo-txt', 'm-0')}>Felicity</h1>
+                </a>
                 <button
                     type="button"
                     className={cx('navbar-toggler', 'me-4')}
@@ -140,7 +140,7 @@ const Header = () => {
                         ))}
                     </div>
                     <a
-                        href={routesConfig.home}
+                        href={routesConfig.recruitment}
                         className={cx(
                             'btn',
                             'btn-green-custom',
